@@ -10,7 +10,7 @@ print(mo.group(0) == mo.group())
 
 phoneNumberRegexpar = re.compile(r'(\d\d\d)-(\d\d\d-\d\d\d\d)')
 
-mo = phoneNumberRegexpar.search("My número es 444-244-5555 gracuias")
+mo = phoneNumberRegexpar.search("My número es 444-244-5555 ")
 print(mo.group(1)) #muestra el contenido del primer parentesis  
 print(mo.group(2)) #muestra el contenido del segundo parentesis
 print(mo.group(0)) #muestra 
