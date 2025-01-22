@@ -55,7 +55,8 @@ ROOT_URLCONF = 'mydjangoproy.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
+        # LE DECIMOS COMO SE LLAMAN LAS CARPETAS DONDE BUSCAR LAS TEMPLATESS
+        'DIRS': ['templates'], 
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
