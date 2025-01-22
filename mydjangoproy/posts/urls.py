@@ -3,6 +3,6 @@ from .import views
 
 urlpatterns = [
    
-    path('', views.post_list),
+    path('', views.posts_list),
     
 ]
