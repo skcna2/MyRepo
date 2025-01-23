@@ -1,18 +1,13 @@
-<!DOCTYPE html>
-<!--Linkamos la stylesheet creada  -->
+{% extends 'layout.html' %}
 
-{% load static %}
+{% block title %}
+HOME
+{% endblock title %}
 
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <!--Linkamos la stylesheet creada  -->
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-</head>
-<body>
-    <h1>Home</h1>
-    <P>Check out my <a href="/about">About</a> page.</P>
-</body>
-</html>
+
+{% block content %}
+<h1>HOME</h1>
+<P>Check out my <a href="/about">About</a> page.</P>
+
+{% endblock content %}
+
