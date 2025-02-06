@@ -18,6 +18,9 @@ from django.contrib import admin
 #importamos include para incluir la urlde la aplicacion POST
 from django.urls import path, include 
 from .import views
+from django.conf.urls.static import static
+from django.conf import settings
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -26,3 +29,5 @@ urlpatterns = [
     #agregamos POST URLS
     path('posts/', include('posts.urls'))
 ]
+
+urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
